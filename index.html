@@ -201,22 +201,13 @@
       border-bottom:1px solid var(--border);
       position:relative;
     }
-    .badge{
-      position:absolute;
-      top:12px; left:12px;
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(41,154,204,.25);
-      background: rgba(41,154,204,.10);
-      font-weight:900;
-      color:#0b4d66;
-      letter-spacing:.02em;
-      font-size:.85rem;
+      .cardLabel{
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
     }
-
     .content{ padding:16px 16px 14px; flex:1; display:flex; flex-direction:column; gap:10px;}
     .content h4{ margin:0; font-size:1.08rem; letter-spacing:-0.01em;}
     .content p{ margin:0; color:var(--muted); font-weight:600; }
@@ -360,9 +351,9 @@
       <!-- 1) Call Center Sim -->
       <div class="card">
         <div class="thumb">
-          <div class="badge">Scenario Simulation</div>
         </div>
         <div class="content">
+          <span class="cardLabel">Scenario Simulation</span>
           <h4>Call Center De-escalation (Frustration Meter)</h4>
           <p>Branching dialogue with feedback to build trust and reduce escalation.</p>
           <div class="meta">
@@ -380,9 +371,9 @@
       <!-- 2) System Training -->
       <div class="card">
         <div class="thumb">
-          <div class="badge">System Training</div>
         </div>
         <div class="content">
+          <span class="cardLabel">System Training</span>
           <h4>IT Help Desk Ticket Simulation</h4>
           <p>Guided practice for completing a workflow with corrective feedback.</p>
           <div class="meta">
@@ -400,9 +391,9 @@
       <!-- 3) Compliance Training -->
       <div class="card">
         <div class="thumb">
-          <div class="badge">Compliance</div>
         </div>
         <div class="content">
+          <span class="cardLabel">Compliance Training</span>
           <h4>Compliance Training (Rebranded Project)</h4>
           <p>Decision-based scenarios that shift compliance from “checkbox” to applied judgment.</p>
           <div class="meta">
